@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div id="question-container">
+                <div id="question-number" class="question-number">
+                    <h3>Question <span class="question-num-value"></span> 0f <span class="total-question"></span></h3>
+                </div>
+                <div id="question" class="question"></div>
+                <div class="error">
+                    <span style="color: #e81123;" margin="" id="optionError" class="optionError"></span>
+                </div>
+                <div id="answer-buttons" class="btn-grid options">
+                    <div id="0" class="option1" onclick="check(this)"></div>
+                    <div id="1" class="option2" onclick="check(this)"></div>
+                    <div id="2" class="option3" onclick="check(this)"></div>
+                    <div id="3" class="option4" onclick="check(this)"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn btn" onclick="next()">Next</button>
+            </div>
+
+            <div class="quiz-over">
+                <div class="box">
+                    <h1>
+                        Great!!!<br>
+                        You got <span class="correct-answers"></span>  out of <span class="total-question2"></span> answers correct.<br>
+                        That's <span class="percentage"></span> 
+                    </h1>
+                    <button type="button" onclick="playAgain()">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
