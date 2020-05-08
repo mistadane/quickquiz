@@ -6,6 +6,10 @@
     .home-container {
         width: 80%;
     }
+
+    .question {
+        font-size: 2.5rem;
+    }
 }
     
 
@@ -16,6 +20,10 @@
 
     .home-container {
         width: 80%;
+    }
+
+    .question {
+        font-size: 2.5rem;
     }
 }
 
@@ -28,5 +36,11 @@
         width: 80%;
     }
 
-    
+    .question {
+        font-size: 1.5rem;
+    }
+
+    .image div {
+        width: 300px;
+    }
 }
